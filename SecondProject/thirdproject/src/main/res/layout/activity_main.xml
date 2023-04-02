@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/one"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="55dp"
         android:gravity="center"
         android:text="1P"
@@ -22,19 +22,19 @@
         android:id="@+id/imageView"
         android:layout_width="180dp"
         android:layout_height="160dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/tx_1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/one" />
 
     <TextView
         android:id="@+id/tx_1"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="120dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:text=""
@@ -58,16 +58,12 @@
         app:layout_constraintVertical_bias="0.549" />
 
 
-
-
-
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/two"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginTop="55dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="120dp"
         android:gravity="center"
         android:text="2P"
         android:textSize="40sp"
@@ -80,18 +76,18 @@
         android:layout_width="180dp"
         android:layout_height="160dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="120dp"
         android:layout_marginBottom="10dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/tx_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/two" />
 
     <TextView
         android:id="@+id/tx_2"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="120dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:text=""
@@ -129,7 +125,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/liar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VS"
@@ -149,7 +145,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/liar" />
 
     <TextView
         android:id="@+id/tx_success"
@@ -171,9 +167,48 @@
         app:layout_constraintBottom_toTopOf="@+id/winner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/start_liar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="게임 시작"
+        app:layout_constraintBottom_toTopOf="@+id/winner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/start_liar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="게임 시작"
+        app:layout_constraintBottom_toTopOf="@+id/winner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="결과 발표"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/winner_liar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="결과 발표"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/winner_liar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
