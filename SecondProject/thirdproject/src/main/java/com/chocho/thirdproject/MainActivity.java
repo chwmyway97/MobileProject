@@ -388,7 +388,7 @@ public class MainActivity extends AppCompatActivity {
                     tx_2.setText(hands[2]);
                     Img2.setImageResource(Img1View);
                 }
-
+                Log.d("숫자", getString(num));
             } else { //P1이 9보다 크면 이미 승리 확정이라 다시 무작위
                 tx_1.setText(hands[getInt1]);
                 tx_2.setText(hands[getInt2]);
@@ -532,6 +532,7 @@ public class MainActivity extends AppCompatActivity {
 //        Toast.makeText(this, "결과 버튼을 클릭해주세요.", Toast.LENGTH_SHORT).show();
         start_liar2.setEnabled(false);
         winner.setEnabled(true);
+
     }
 
 
