@@ -16,3 +16,4 @@ rootProject.name = "SecondProject"
 include ':app'
 include ':thirdproject'
 include ':fourthproject'
+include ':seventhproject'
